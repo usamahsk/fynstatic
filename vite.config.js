@@ -8,6 +8,7 @@ export default {
   server: {
     port: 8080
   },
+  base:'/fynstatic/',
   // Optional: Silence Sass deprecation warnings. See note below.
   css: {
      preprocessorOptions: {
