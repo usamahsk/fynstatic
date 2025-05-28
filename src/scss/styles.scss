@@ -1,0 +1,41 @@
+// Import all of Bootstrap’s CSS
+@import "bootstrap/scss/functions";
+@import "bootstrap/scss/variables";
+
+$primary: #060528; // set the $primary variable
+$secondary:#00CE2F;
+
+// merge with existing $theme-colors map
+$theme-colors: map-merge($theme-colors, ("primary": $primary,"secondary":$secondary ));
+
+@import "bootstrap/scss/bootstrap";
+
+.form-control-dark {
+    border-color: var(--bs-gray);
+}
+
+.form-control-dark:focus {
+    border-color: #fff;
+    color: (#060528)rgb(from #060528 r g b);
+
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .25);
+}
+
+.text-small {
+    font-size: 85%;
+}
+
+.dropdown-toggle:not(:focus) {
+    outline: 0;
+}
+
+footer ul li a {
+    color: #ffff !important;
+
+}
+header ul li a{
+    color:black !important
+}
+section h1{
+    color: $primary !important;
+}
