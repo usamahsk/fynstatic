@@ -2,7 +2,6 @@ import { resolve } from 'path'
 
 export default {
   root: resolve(__dirname, 'src'),
-  base:'./',
   build: {
     outDir: '../dist',
     rollupOptions: {
@@ -15,6 +14,7 @@ export default {
         blogs: resolve(__dirname, 'src/blogs.html'),
          // add other HTML files here
         contact: resolve(__dirname, 'src/contact.html'),
+        index:resolve(__dirname, 'src/index.html')
       },
     }
   },
